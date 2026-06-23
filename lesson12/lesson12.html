@@ -116,6 +116,68 @@
       border-radius: 3px;
     }
 
+    .tweet {
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      max-width: 500px;
+      margin-bottom: 15px;
+    }
+
+    .profile-img{
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+
+    .tweet-content{
+      flex: 1;
+      min-width: 0;
+      width: 100%;
+    }
+
+    .tweet-header{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .name{
+      font-weight: bold;
+    }
+
+    .username-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 2px;
+      gap: 20px;
+    }
+
+    .username{
+      color: gray;
+    }
+
+    .follow-btn{
+      background-color: #1DA1F2;
+      color: white;
+      border: none;
+      border-radius: 50px;
+      padding: 4px 12px;
+      font-weight: bold;
+      cursor: pointer;
+      white-space: nowrap;
+      flex-shrink: 0;
+    }
+
+    .tweet-text{
+      margin-top: 5px;
+      margin-bottom: 0;
+    }
   </style>
 </head>
 <body>
@@ -152,6 +214,7 @@
   </div>
 
 <br>
+<h1><u>Challenge Exercises</u></h1>
 <h1>12e</h1>
     <div class="container card">
     <div class="card-row">
@@ -177,6 +240,43 @@
     </div>
     <button class="btn">Download</button>
   </div>
-  
+  <br>
+
+<h1>12g</h1>
+<div class="tweet">
+  <img src="arceus pc.png" alt="Profile" class="profile-img">
+  <div class="tweet-content">
+    <div class="name">Arceus</div>
+    <div class="row-username">
+      <span class="username">godPokemon</span>
+      <button class="follow-btn">Follow</button>
+    </div>
+    <p class="tweet-text">I'am God of Pokemon.</p>
+  </div>
+</div>
+
+<div class="tweet">
+  <img src="palkia pc.png" alt="Profile" class="profile-img">
+  <div class="tweet-content">
+    <div class="name">Palkia</div>
+    <div class="row-username">
+      <span class="username">spaceKia</span>
+      <button class="follow-btn">Follow</button>
+    </div>
+    <p class="tweet-text">Ruler of space</p>
+  </div>
+</div>
+
+<div class="tweet">
+  <img src="dialga pc.png" alt="Profile" class="profile-img">
+  <div class="tweet-content">
+    <div class="name">Dialga</div>
+    <div class="row-username">
+      <span class="username">timePoks</span>
+      <button class="follow-btn">Follow</button>
+    </div>
+    <p class="tweet-text">I am the time Pokemon.</p>
+  </div>
+</div>
 </body>
 </html>
